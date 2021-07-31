@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+
+</head>
+
+<body>
+
+    {{>navbar}}
+    <br />
+    <!-- Close Header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row" style="margin-top : 10px">
+                    <div class="col-md-6 col-12 errorPage">
+                        <img src="./images/errorPage.png" class="errorImage" alt="Developer's Photo" />
+                        <div style="padding-left : 50px">
+                            <h1> <span style="color: #0984e3"> {{error}}</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header End -->
+
+    {{>footer}}
+
+</body>
+
+</html>

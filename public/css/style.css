@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+.main_menu{
+    width : 100%;
+    background-color: #1e272e;
+}
+
+.header{
+    min-width :100%;
+    background-color: #1e272e;
+}
+
+
+.header .navLinks{
+    color : #fff;
+}
+
+.main_header{
+    min-height: 505px;
+}
+
+
+.header_leftSide{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    max-height: 400px;
+}
+
+.header_leftSide p{
+    font-size: 15px;
+    justify-content: center;
+    align-content: center;
+}
+
+.header_leftSide h1{
+    font-size: 29px;
+}
+
+.sliding , .header_rightSide{
+    max-height: 400px;
+    overflow : hidden;
+}
+
+.foot{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #1e272e;
+    color : #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.errorPage{
+    height : 30rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 25%;
+}
+
+.errorImage {
+    width : 30rem;
+    height: 15rem;
+}
+
+
+/* Weather Page */
+
+.temp_form{
+    margin-top:20px;
+    background-color: #323544;
+    width : 45rem;
+    margin-left: 12rem;
+    margin-bottom: 20px;
+    border-radius: 2rem;
+}
+
+.temp_form #city_name{
+    width : 37rem;
+    background-color: #323544;
+    height : 3rem;
+    border-radius: 2rem;
+    border: none;
+    padding-left: 30px;
+    color : #fff;
+}
+
+::placeholder{
+    color : lightgrey;
+}
+
+.temp_form #city_name:active {
+    border : none;
+}
+
+
+.temp_form #submitBtn{
+    border-radius:50px;
+    width : 7rem;
+    background-color:#009ad8;
+    border : none;
+    height : 2rem;
+    color : #fff;
+}
+
+
+.temp_info{
+    width : 25rem;
+    margin : auto;
+    height: 15rem;
+    background-color: #323544;
+    border-radius:1rem;
+    padding: 1rem;
+    margin-top: 50px;
+}
+
+.temp_form input[type="submit"]:hover {
+    color : #009ad8;
+    background-color: #fff;
+}
+
+.top_layer{
+    width : 100%;
+    height : 20%;
+    background-color : #2d303d;
+    border-radius: 1rem;
+    padding : 0.5rem;
+    display: flex;
+    justify-content: start;
+}
+
+.top_layer #day{
+    margin-right: auto;
+}
+
+.top_layer p{
+     color : #fff;
+    font-weight: 300;
+}
+
+.main_layer{
+    width : 100%;
+    height : 80%;
+    display : flex;
+    flex-direction: column;
+}
+
+.main_layer #cityName{
+    padding : 2rem 0;
+    color : #bdc1c8;
+    font-weight: 300;
+    font-size:20px;
+}
+
+.main_layer .middle_layer{
+    display :flex;
+    justify-content:space-between;
+    color : #fff;
+}
+
+.main_layer .middle_layer .deg{
+    font-size: 20px;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa{
+    font-size:3rem;
+    font-weight: 900;
+}
+
+.fa{
+    color : #009ad8;
+}
+
+
+@media  screen and (max-width: 768px){
+    .header_leftSide{
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+    .header_leftSide a{
+        margin-left: 200px;
+    }
+
+    .header_rightSide{
+        width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .header_rightSide .sliding{
+        max-width: 600px;
+        max-height: 350px;
+    }
+
+    .imgUser img{
+        min-width: 500px;
+        max-height: 300px;
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+
+    .temp_form{
+        width : 25rem;
+        margin-left: 130px;
+    }
+
+    .temp_form #city_name{
+        width : 15rem;
+    }
+}
+
+@media  screen and (max-width: 503px){
+    .header_leftSide{
+        margin-left: -0px;
+    }
+    .header_rightSide{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .imgUser img{
+        min-width: 300px;
+        max-height: 200px;
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+
+    .temp_form{
+        width : 20rem;
+        margin-left: 80px;
+    }
+
+    .temp_form #city_name{
+        width : 12rem;
+    }
+
+    
+    .temp_info{
+        width : 20rem;
+    }
+
+}
+
+@media screen and (max-width: 323px){
+    .header_leftSide a{
+        margin-left: 00px;
+    }
+    .header_rightSide .sliding{
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .imgUser img{
+        min-width: 150px;
+        max-height: 150px;
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+
+    .temp_form{
+        width : 15rem;
+        margin-left: 30px;
+    }
+
+    .temp_form #city_name{
+        width : 7rem;
+    }
+
+    
+    .temp_info{
+        width : 15rem;
+    }
+}
